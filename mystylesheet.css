@@ -1,0 +1,29 @@
+h1, h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkslateblue;
+
+    }
+    body {
+        background-color: lavenderblush;
+        color: salmon;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 50px;
+    }
+p {
+    color: lightseagreen;
+}
+/* unvisited link */
+a:link {
+    color: rgb(255, 119, 142);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(103, 144, 255);
+  }
+  
+  a:hover {
+    color: rgb(255, 45, 150);
+  }
+  
