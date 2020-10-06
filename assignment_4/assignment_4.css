@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(213, 255, 253);
+}
+
+h1 {
+    color: rgb(86, 131, 112);
+    background-color: rgb(111, 178, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 4px solid rgb(255, 214, 161)
+}
+#discography_table {
+    background-color: rgb(255, 187, 164);
+
+
+    
+}
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
