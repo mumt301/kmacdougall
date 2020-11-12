@@ -35,7 +35,7 @@
                 let mbBaseURL = "https://musicbrainz.org/ws/2/";
                 let queryURL = mbBaseURL + theURL;
                 let xmlHttp = new XMLHttpRequest();
-                xmlHttp.open("GET", theURL);
+                xmlHttp.open("GET", queryURL);
                     xmlHttp.send();
 
                     xmlHttp.onreadystatechange = function () {
