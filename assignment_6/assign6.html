@@ -27,7 +27,7 @@
                 let params = (new URL(document.location)).searchParams;
                 if (params.has('artist')) {
                     let artistName = params.get('artist');
-                    httpGET("artist?query=", getMBID);
+                    httpGET("artist?query="+artistName, getMBID);
                 }
             }
 
@@ -62,29 +62,31 @@
                 releases=retrievedData.getElementsByTagName("release-group");
                 let placeholder = document.getElementById('placeholder');
                 let tableHTML = 
+                
                 `
                 <table>
                     <tr>
                         <th>Album Name</th>
-                        <th>Release Date</th>
+                        <th>Released:</th>
                     </tr>
-                `;
+                `; 
                 let albumHTML;
                 let albumName;
                 let releaseDate;
-                for(i=0; i<releases.length;i++)
+                for(row=0; row<releases.length;row++)
                 {
-                    albumHTML = releases[i];
+                    albumHTML = releases[row];
                     albumName = albumHTML.getElementsByTagName("title")[0].innerHTML;
                     releaseDate = albumHTML.getElementsByTagName("first-release-date")[0].innerHTML;
                     tableHTML += 
                     `
                     <tr>
                         <td>${albumName}</td>
-                        <td>${ReleaseDate}</td>
+                        <td>${releaseDate}</td>
                     </tr>
                     `;
                 }
+                
 
 
                 
